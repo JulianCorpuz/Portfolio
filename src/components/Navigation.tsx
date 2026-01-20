@@ -20,28 +20,24 @@ interface NavigationProps {
 
 export default function Navigation({ activeTab, onTabChange }: NavigationProps) {
   return (
-    <nav className="fixed sm:fixed lg:relative bottom-0 left-0 right-0 lg:bottom-auto
-                   bg-dark-card/75 backdrop-blur-md
-                   border-t lg:border lg:border-dark-border
-                   rounded-t-xl sm:rounded-t-2xl lg:rounded-2xl
-                   border-dark-border
-                   px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4
-                   z-30 md:z-0
-                   md:mb-6
+    <nav className="w-full bg-dark-card/95 backdrop-blur-md
+                   border-b border-dark-border
+                   px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5
                    smooth-transition
-                   animate-slide-up">
-      <ul className="flex justify-around lg:justify-start lg:gap-8 gap-1 sm:gap-2 overflow-x-auto">
+                   animate-slide-down">
+      <ul className="flex justify-center lg:justify-start lg:gap-8 gap-1 sm:gap-2 overflow-x-auto max-w-7xl mx-auto">
         {navItems.map((item, index) => (
-          <li key={item.id} style={{animationDelay: `${index * 0.1}s`}} className="animate-fade-in">
+          <li key={item.id} style={{animationDelay: `${index * 0.1}s`}} className="animate-fade-in flex-shrink-0">
             <button
               onClick={() => onTabChange(item.id)}
               className={`
-                flex flex-col md:flex-row md:items-center md:gap-2
-                py-2 md:py-3 px-3 md:px-4
+                flex flex-col sm:flex-row sm:items-center sm:gap-2
+                py-2 sm:py-3 px-3 sm:px-4 md:px-5
                 rounded-lg transition-all duration-300
-                text-sm md:text-base font-medium
+                text-xs sm:text-sm md:text-base font-medium
                 relative overflow-hidden
                 group
+                whitespace-nowrap
                 ${activeTab === item.id
                   ? 'text-accent-gold bg-dark-border border border-accent-gold/50 shadow-lg shadow-accent-gold/20'
                   : 'text-text-lighter hover:text-text-light hover:border-dark-border hover:border'

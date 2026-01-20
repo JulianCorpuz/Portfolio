@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Sidebar from '@/components/Sidebar'
 import Navigation from '@/components/Navigation'
 import About from './about/page'
@@ -9,6 +9,19 @@ import Contact from './contact/page'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('about')
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      setIsHeaderVisible(currentScrollY < lastScrollY || currentScrollY < 50)
+      setLastScrollY(currentScrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY])
 
   const renderContent = () => {
     switch (activeTab) {
@@ -26,24 +39,31 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-dark-bg flex flex-col lg:flex-row lg:gap-8 lg:p-8 p-4 sm:p-6">
-      {/* Sidebar */}
-      <div className="lg:w-80 lg:flex-shrink-0 mb-6 lg:mb-0">
-        <Sidebar />
-      </div>
-
-      {/* Main Content */}
-      <div className="flex-1 pb-24 sm:pb-28 md:pb-24 lg:pb-0">
-        {/* Content Area */}
-        <div className="bg-dark-card border border-dark-border rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6">
-          {renderContent()}
-        </div>
-
-        {/* Navigation */}
+    <>
+      {/* Sticky Header Navigation */}
+      <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isHeaderVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+      }`}>
         <Navigation activeTab={activeTab} onTabChange={setActiveTab} />
       </div>
-    </div>
+
+      {/* Main Layout */}
+      <div className="min-h-screen bg-dark-bg flex flex-col lg:flex-row lg:gap-8 lg:p-8 p-4 sm:p-6 pt-20 sm:pt-24 md:pt-20 lg:pt-0">
+        {/* Sidebar */}
+        <div className="lg:w-80 lg:flex-shrink-0 mb-6 lg:mb-0">
+          <Sidebar />
+        </div>
+
+        {/* Main Content */}
+        <div className="flex-1 pb-8 sm:pb-12 md:pb-8 lg:pb-0">
+          {/* Content Area */}
+          <div className="bg-dark-card border border-dark-border rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6">
+          {renderContent()}
+        </div>
+      </div>
+    </>
   )
+}
 }
 
 function SkillsSection() {
