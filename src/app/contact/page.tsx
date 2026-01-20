@@ -12,7 +12,7 @@ export default function Contact() {
         <ContactForm />
       </div>
 
-      <div className="mt-12 pt-12 border-t border-dark-border grid md:grid-cols-3 gap-8 animate-slide-up" style={{animationDelay: '0.2s'}}>
+      <div className="mt-8 sm:mt-12 pt-8 sm:pt-12 border-t border-dark-border grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 animate-slide-up" style={{animationDelay: '0.2s'}}>
         <div className="bg-dark-border border border-dark-border rounded-lg p-6 hover:border-accent-gold/50 transition smooth-transition group hover:bg-dark-border/80 hover:shadow-lg hover:shadow-accent-gold/10 animate-slide-up" style={{animationDelay: '0.3s'}}>
           <p className="text-text-lighter text-sm uppercase font-semibold mb-3 group-hover:text-accent-gold smooth-transition">📧 Email</p>
           <a href="mailto:iancorpuz0118@gmail.com" className="text-accent-gold hover:text-accent-gold-light transition font-semibold group-hover:scale-105 inline-block smooth-transition">

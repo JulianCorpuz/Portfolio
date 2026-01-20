@@ -4,6 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Julius Ian Corpuz - Portfolio',
   description: 'Full Stack Engineering Sr Developer at Accenture',
+  viewport: 'width=device-width, initial-scale=1.0, viewport-fit=cover',
 }
 
 export default function RootLayout({

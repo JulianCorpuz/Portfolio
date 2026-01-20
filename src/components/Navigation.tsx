@@ -20,17 +20,17 @@ interface NavigationProps {
 
 export default function Navigation({ activeTab, onTabChange }: NavigationProps) {
   return (
-    <nav className="fixed md:relative bottom-0 left-0 right-0 md:bottom-auto
+    <nav className="fixed sm:fixed lg:relative bottom-0 left-0 right-0 lg:bottom-auto
                    bg-dark-card/75 backdrop-blur-md
-                   border-t md:border md:border-dark-border
-                   rounded-t-2xl md:rounded-2xl
+                   border-t lg:border lg:border-dark-border
+                   rounded-t-xl sm:rounded-t-2xl lg:rounded-2xl
                    border-dark-border
-                   px-4 md:px-6 py-3 md:py-4
+                   px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4
                    z-30 md:z-0
                    md:mb-6
                    smooth-transition
                    animate-slide-up">
-      <ul className="flex justify-around md:justify-start md:gap-8">
+      <ul className="flex justify-around lg:justify-start lg:gap-8 gap-1 sm:gap-2 overflow-x-auto">
         {navItems.map((item, index) => (
           <li key={item.id} style={{animationDelay: `${index * 0.1}s`}} className="animate-fade-in">
             <button

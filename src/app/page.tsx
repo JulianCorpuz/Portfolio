@@ -26,16 +26,16 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-dark-bg flex flex-col md:flex-row md:gap-8 md:p-8">
+    <div className="min-h-screen bg-dark-bg flex flex-col lg:flex-row lg:gap-8 lg:p-8 p-4 sm:p-6">
       {/* Sidebar */}
-      <div className="md:w-80 md:flex-shrink-0">
+      <div className="lg:w-80 lg:flex-shrink-0 mb-6 lg:mb-0">
         <Sidebar />
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 pb-24 md:pb-0">
+      <div className="flex-1 pb-24 sm:pb-28 md:pb-24 lg:pb-0">
         {/* Content Area */}
-        <div className="bg-dark-card border border-dark-border rounded-2xl md:rounded-3xl p-6 md:p-8 mb-6">
+        <div className="bg-dark-card border border-dark-border rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6">
           {renderContent()}
         </div>
 
@@ -78,9 +78,9 @@ function SkillsSection() {
   ]
 
   return (
-    <div>
-      <h2 className="text-3xl font-bold text-white mb-8">Skills</h2>
-      <div className="grid md:grid-cols-1 gap-8">
+    <div className="animate-fade-in">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-8 animate-slide-up">Skills</h2>
+      <div className="grid grid-cols-1 gap-6 sm:gap-8">
         {skillCategories.map((category) => (
           <div key={category.name}>
             <h3 className="text-xl font-bold text-accent-gold mb-6">{category.name}</h3>

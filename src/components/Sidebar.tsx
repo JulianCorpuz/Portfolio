@@ -11,34 +11,32 @@ export default function Sidebar({ isOpen = false }: SidebarProps) {
 
   return (
     <aside className={`
-      fixed md:sticky md:top-0 md:top-8
-      left-0 top-0 w-full md:w-80
-      bg-dark-card border border-dark-border rounded-2xl
-      p-6 md:p-8
-      ${expanded ? 'max-h-fit' : 'max-h-fit md:max-h-screen'}
-      overflow-hidden md:overflow-visible
+      relative lg:sticky lg:top-8
+      w-full lg:w-80
+      bg-dark-card border border-dark-border rounded-xl sm:rounded-2xl lg:rounded-3xl
+      p-4 sm:p-6 md:p-8
+      max-h-fit overflow-visible
       transition-all duration-300
-      md:rounded-3xl
-      z-40 md:z-0
+      z-0
       animate-fade-in
       hover:border-accent-gold/50 smooth-transition
     `}>
       {/* Profile Section */}
-      <div className="flex flex-col items-center md:items-start gap-4 mb-6 animate-slide-up">
-        <div className="relative w-20 h-20 md:w-28 md:h-28">
+      <div className="flex flex-col items-center lg:items-start gap-3 sm:gap-4 mb-6 animate-slide-up">
+        <div className="relative w-16 sm:w-20 md:w-24 lg:w-28 h-16 sm:h-20 md:h-24 lg:h-28">
           <div className="absolute inset-0 bg-gradient-to-br from-accent-gold to-accent-gold-dark rounded-2xl blur-xl opacity-30 animate-pulse-gold"></div>
-          <div className="relative w-full h-full rounded-2xl bg-gradient-dark flex items-center justify-center">
-            <div className="text-4xl md:text-5xl font-bold gradient-text animate-float">
+          <div className="relative w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl bg-gradient-dark flex items-center justify-center">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text animate-float">
               JC
             </div>
           </div>
         </div>
         
-        <div className="text-center md:text-left">
-          <h1 className="text-2xl md:text-3xl font-bold text-white animate-slide-down">
+        <div className="text-center lg:text-left">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white animate-slide-down break-words">
             Julius Ian Corpuz
           </h1>
-          <p className="text-accent-gold text-sm md:text-base font-semibold mt-1 animate-slide-down" style={{animationDelay: '0.1s'}}>
+          <p className="text-accent-gold text-xs sm:text-sm md:text-base font-semibold mt-1 animate-slide-down" style={{animationDelay: '0.1s'}}>
             Senior Developer
           </p>
         </div>

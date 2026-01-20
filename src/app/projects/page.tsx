@@ -8,7 +8,7 @@ export default function Projects() {
         Some notable projects I've worked on showcasing my technical expertise
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {projectsData.map((project, index) => (
           <div
             key={project.id}
@@ -20,13 +20,13 @@ export default function Projects() {
               <span className="relative z-10 group-hover:scale-125 smooth-transition animate-float">{project.id.charAt(0).toUpperCase()}</span>
             </div>
             
-            <h3 className="text-lg font-bold text-white mb-2 group-hover:text-accent-gold transition">
+            <h3 className="text-base sm:text-lg font-bold text-white mb-2 group-hover:text-accent-gold transition">
               {project.title}
             </h3>
             
-            <p className="text-text-lighter text-sm mb-4">{project.description}</p>
+            <p className="text-text-lighter text-xs sm:text-sm mb-4 line-clamp-2">{project.description}</p>
             
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex flex-wrap gap-1 sm:gap-2 mb-4">
               {project.technologies.slice(0, 3).map((tech, idx) => (
                 <span
                   key={tech}

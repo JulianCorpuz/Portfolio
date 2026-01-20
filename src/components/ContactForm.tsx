@@ -77,8 +77,8 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl animate-fade-in">
-      <div className="grid md:grid-cols-2 gap-6">
+    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 max-w-2xl animate-fade-in">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
         <div className="animate-slide-up" style={{animationDelay: '0.1s'}}>
           <label className="block text-sm font-semibold text-text-light mb-3">Name</label>
           <input
@@ -122,7 +122,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={submit.status === 'loading'}
-        className="w-full md:w-auto bg-accent-gold text-dark-bg py-3 px-8 rounded-lg font-semibold hover:bg-accent-gold-light transition smooth-transition disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg hover:shadow-accent-gold/30 active:scale-95 animate-slide-up"
+        className="w-full sm:w-auto bg-accent-gold text-dark-bg py-3 px-6 sm:px-8 rounded-lg font-semibold text-sm sm:text-base hover:bg-accent-gold-light transition smooth-transition disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg hover:shadow-accent-gold/30 active:scale-95 animate-slide-up"
         style={{animationDelay: '0.4s'}}
       >
         {submit.status === 'loading' ? 'Sending...' : 'Send Message'}
