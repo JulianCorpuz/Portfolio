@@ -1,4 +1,3 @@
-import ProjectCard from '@/components/ProjectCard'
 import projectsData from '@/data/projects-data.json'
 
 export default function Projects() {
