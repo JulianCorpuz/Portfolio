@@ -1,0 +1,62 @@
+[
+  {
+    "id": "e-commerce-platform",
+    "title": "E-Commerce Platform",
+    "description": "Full-stack e-commerce solution with product catalog and checkout",
+    "fullDescription": "Built a comprehensive e-commerce platform with React frontend and Node.js backend. Features include product search, shopping cart, and secure checkout process.",
+    "technologies": ["React", "Node.js", "PostgreSQL", "Stripe"],
+    "screenshot": "/images/ecommerce.png",
+    "githubLink": "https://github.com/example/ecommerce",
+    "liveLink": "https://example-ecommerce.com",
+    "technicalDecisions": [
+      "Used Next.js App Router for server-side rendering",
+      "Implemented Stripe for payment processing",
+      "PostgreSQL for relational data modeling"
+    ],
+    "futureImprovements": [
+      "Add inventory management dashboard",
+      "Implement advanced search with filters",
+      "Add customer analytics"
+    ]
+  },
+  {
+    "id": "task-management-app",
+    "title": "Task Management App",
+    "description": "Collaborative task management tool with real-time updates",
+    "fullDescription": "A modern task management application allowing teams to collaborate in real-time. Features include task creation, assignment, and progress tracking.",
+    "technologies": ["React", "TypeScript", "Firebase", "Tailwind CSS"],
+    "screenshot": "/images/tasks.png",
+    "githubLink": "https://github.com/example/task-manager",
+    "liveLink": "https://example-tasks.com",
+    "technicalDecisions": [
+      "Used Firebase for real-time database",
+      "TypeScript for type safety",
+      "Responsive design with Tailwind CSS"
+    ],
+    "futureImprovements": [
+      "Add team collaboration features",
+      "Implement notifications",
+      "Add recurring tasks"
+    ]
+  },
+  {
+    "id": "portfolio-generator",
+    "title": "Portfolio Generator",
+    "description": "CLI tool for generating portfolio websites automatically",
+    "fullDescription": "Command-line tool that helps developers generate professional portfolio websites with minimal configuration.",
+    "technologies": ["Node.js", "TypeScript", "Next.js", "Tailwind CSS"],
+    "screenshot": "/images/portfolio-gen.png",
+    "githubLink": "https://github.com/example/portfolio-gen",
+    "liveLink": "https://example-portfolio-gen.com",
+    "technicalDecisions": [
+      "Built as a CLI tool using Node.js",
+      "Template-based generation system",
+      "Configuration-driven approach"
+    ],
+    "futureImprovements": [
+      "Add more theme options",
+      "Support for custom domains",
+      "Analytics integration"
+    ]
+  }
+]
