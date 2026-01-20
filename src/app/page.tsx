@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Sidebar from '@/components/Sidebar'
 import Navigation from '@/components/Navigation'
 import About from './about/page'
@@ -10,18 +10,32 @@ import Contact from './contact/page'
 export default function Home() {
   const [activeTab, setActiveTab] = useState('about')
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
-      setIsHeaderVisible(currentScrollY < lastScrollY || currentScrollY < 50)
-      setLastScrollY(currentScrollY)
+      // Hide header while scrolling
+      setIsHeaderVisible(false)
+
+      // Clear existing timeout
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current)
+      }
+
+      // Show header when scrolling stops (800ms after last scroll event)
+      scrollTimeoutRef.current = setTimeout(() => {
+        setIsHeaderVisible(true)
+      }, 800)
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [lastScrollY])
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current)
+      }
+    }
+  }, [])
 
   const renderContent = () => {
     switch (activeTab) {
@@ -48,7 +62,7 @@ export default function Home() {
       </div>
 
       {/* Main Layout */}
-      <div className="min-h-screen bg-dark-bg flex flex-col lg:flex-row lg:gap-8 lg:p-8 p-4 sm:p-6 pt-20 sm:pt-24 md:pt-20 lg:pt-0">
+      <div className="min-h-screen bg-dark-bg flex flex-col lg:flex-row lg:gap-8 lg:p-8 p-4 sm:p-6 pt-24 sm:pt-32 md:pt-28 lg:pt-28">
         {/* Sidebar */}
         <div className="lg:w-80 lg:flex-shrink-0 mb-6 lg:mb-0">
           <Sidebar />
@@ -58,12 +72,12 @@ export default function Home() {
         <div className="flex-1 pb-8 sm:pb-12 md:pb-8 lg:pb-0">
           {/* Content Area */}
           <div className="bg-dark-card border border-dark-border rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6">
-          {renderContent()}
+            {renderContent()}
+          </div>
         </div>
       </div>
     </>
   )
-}
 }
 
 function SkillsSection() {
