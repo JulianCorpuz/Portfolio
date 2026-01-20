@@ -83,30 +83,79 @@ export default function Home() {
 function SkillsSection() {
   const skillCategories = [
     {
-      name: 'Core Technologies',
+      name: '⚙️ Core Programming Languages',
       skills: [
         { name: 'Java', level: 95 },
-        { name: 'Spring Framework', level: 90 },
-        { name: 'Spring Batch', level: 88 },
-        { name: 'PHP', level: 85 },
+        { name: 'PHP', level: 92 },
+        { name: 'JavaScript', level: 90 },
       ],
     },
     {
-      name: 'AI & Innovation',
+      name: 'Frameworks',
       skills: [
-        { name: 'Generative AI', level: 85 },
-        { name: 'AI Integration', level: 82 },
-        { name: 'LLM Applications', level: 80 },
-        { name: 'Machine Learning', level: 75 },
+        { name: 'Spring Boot', level: 92 },
+        { name: 'Spring Batch', level: 90 },
+        { name: 'Laravel PHP', level: 88 },
+        { name: 'Cake PHP', level: 85 },
+        { name: 'ReactJs', level: 87 },
+        { name: 'NodeJs', level: 85 },
       ],
     },
     {
-      name: 'Backend & Tools',
+      name: 'Front-End Development',
       skills: [
-        { name: 'REST APIs', level: 92 },
-        { name: 'Database Design', level: 88 },
-        { name: 'Docker', level: 85 },
+        { name: 'HTML', level: 95 },
+        { name: 'CSS', level: 93 },
+        { name: 'Tailwind CSS', level: 92 },
+        { name: 'Bootstrap', level: 90 },
+      ],
+    },
+    {
+      name: 'Back-End & Databases',
+      skills: [
+        { name: 'MySQL', level: 92 },
+        { name: 'NoSQL', level: 88 },
+        { name: 'GraphQL', level: 85 },
+        { name: 'REST APIs', level: 94 },
+      ],
+    },
+    {
+      name: '🤖 AI & Automation',
+      skills: [
+        { name: 'Generative AI', level: 88 },
+        { name: 'GitHub Copilot (Agentic AI)', level: 90 },
+        { name: 'LLM Integration', level: 85 },
+        { name: 'AI Automation', level: 83 },
+      ],
+    },
+    {
+      name: 'DevOps & Tools',
+      skills: [
+        { name: 'Docker', level: 90 },
+        { name: 'Jenkins', level: 88 },
         { name: 'Git', level: 95 },
+        { name: 'Maven', level: 87 },
+        { name: 'Linux / Shell Script', level: 85 },
+        { name: 'Ansible', level: 82 },
+      ],
+    },
+    {
+      name: 'Data & CMS',
+      skills: [
+        { name: 'Elasticsearch', level: 82 },
+        { name: 'Hadoop', level: 80 },
+        { name: 'Tableau', level: 85 },
+        { name: 'Qlik Sense', level: 83 },
+        { name: 'WordPress', level: 88 },
+      ],
+    },
+    {
+      name: 'Agile & Management',
+      skills: [
+        { name: 'Scrum', level: 92 },
+        { name: 'Kanban', level: 90 },
+        { name: 'Jira', level: 91 },
+        { name: 'Agile Methodology', level: 90 },
       ],
     },
   ]

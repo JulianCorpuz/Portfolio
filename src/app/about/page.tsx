@@ -47,15 +47,19 @@ export default function About() {
       </div>
 
       <div className="mt-10 pt-10 border-t border-dark-border animate-slide-up" style={{animationDelay: '0.5s'}}>
-        <h3 className="text-xl font-bold text-accent-gold mb-6">Skills & Technologies</h3>
+        <h3 className="text-xl font-bold text-accent-gold mb-6">Technical Skills</h3>
         <div className="grid md:grid-cols-2 gap-4">
           {[
-            { category: 'Backend', skills: 'Java, Spring Batch, Node.js, PHP' },
-            { category: 'Frontend', skills: 'React, TypeScript, Tailwind CSS, JavaScript' },
-            { category: 'Databases', skills: 'SQL, PostgreSQL, MongoDB, MySQL' },
-            { category: 'Tools & DevOps', skills: 'Git, Docker, AWS, Jenkins, Cloud Services' },
-            { category: 'AI & Emerging', skills: 'Generative AI, LLMs, Prompt Engineering, ML Basics' },
-            { category: 'Architecture', skills: 'Microservices, REST APIs, Event-driven Design' }
+            { category: '⚙️ Programming', skills: 'Java, PHP, JavaScript' },
+            { category: 'Frameworks', skills: 'Spring Boot, Spring Batch, Laravel, Cake PHP, ReactJs, NodeJs' },
+            { category: 'Frontend', skills: 'HTML, CSS, Bootstrap, Tailwind CSS, ReactJs' },
+            { category: 'Backend & DB', skills: 'MySQL, NoSQL, GraphQL, REST APIs' },
+            { category: '🤖 AI & Automation', skills: 'Generative AI, GitHub Copilot (Agentic AI), LLM Integration' },
+            { category: 'DevOps Tools', skills: 'Docker, Jenkins, Git, Maven, Linux, Ansible, SonarQube, Nexus, Tomcat, Selenium' },
+            { category: 'Version Control', skills: 'Git, SharePoint, SVN' },
+            { category: 'Big Data', skills: 'Hadoop, Elasticsearch' },
+            { category: 'Data Viz & ETL', skills: 'Tableau, Qlik Sense, Informatica Power Center' },
+            { category: 'Project Management', skills: 'Agile Methodology, Scrum, Kanban, Jira' }
           ].map((skill, index) => (
             <div
               key={index}
