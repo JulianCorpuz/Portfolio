@@ -19,9 +19,9 @@ export default function Projects() {
               <img 
                 src={project.screenshot} 
                 alt={project.title}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain group-hover:brightness-110 smooth-transition"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-gold/0 to-accent-gold/10 opacity-0 group-hover:opacity-100 smooth-transition"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-accent-gold/5 opacity-0 group-hover:opacity-100 smooth-transition"></div>
             </div>
             
             <h3 className="text-base sm:text-lg font-bold text-white mb-2 group-hover:text-accent-gold transition">
