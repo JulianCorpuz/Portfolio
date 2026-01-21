@@ -27,20 +27,69 @@ export default function About() {
           <div className="border-l-2 border-accent-gold pl-6 pb-6 relative animate-slide-up hover:border-accent-gold-light smooth-transition" style={{animationDelay: '0.3s'}}>
             <div className="absolute -left-[9px] top-0 w-4 h-4 bg-accent-gold rounded-full border-2 border-dark-bg animate-pulse-gold"></div>
             <h4 className="text-lg font-bold text-white mb-1">Full Stack Engineering Sr Developer</h4>
-            <p className="text-accent-gold font-semibold text-sm mb-3">Accenture • Present</p>
+            <p className="text-accent-gold font-semibold text-sm mb-2">Accenture • May 2023 - Present</p>
+            <p className="text-text-darker text-xs mb-2">Risk Management System</p>
             <p className="text-text-light text-sm">
-              Leading backend development initiatives using Java and Spring Batch. Designing and implementing scalable solutions
-              for enterprise clients. Integrating Generative AI technologies to enhance product capabilities.
+              Tech Stack: Spring Batch, Java, Oracle, SyBase
             </p>
           </div>
 
           <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.4s'}}>
             <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
-            <h4 className="text-lg font-bold text-white mb-1">Backend Developer</h4>
-            <p className="text-accent-gold font-semibold text-sm mb-3">Accenture • Previous</p>
+            <h4 className="text-lg font-bold text-white mb-1">Software Engineer (Java Developer)</h4>
+            <p className="text-accent-gold font-semibold text-sm mb-2">Norima Technologies Inc. • May 2022 - March 2023</p>
+            <p className="text-text-darker text-xs mb-2">Majesco: Insurance System</p>
             <p className="text-text-light text-sm">
-              Developed robust backend systems and APIs. Worked with databases, REST APIs, and microservices architecture.
-              Collaborated with cross-functional teams to deliver high-quality solutions.
+              Tech Stack: SpringBoot, Java
+            </p>
+          </div>
+
+          <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.45s'}}>
+            <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
+            <h4 className="text-lg font-bold text-white mb-1">Full Stack Web Developer</h4>
+            <p className="text-accent-gold font-semibold text-sm mb-2">Osolabs (Freelance) • Nov 2021 - April 2022</p>
+            <p className="text-text-darker text-xs mb-2">DogoDesign - DogoAdmin (Inventory Store and Admin Web Application)</p>
+            <p className="text-text-light text-sm">
+              Tech Stack: PHP Laravel, Javascript, MySQL
+            </p>
+          </div>
+
+          <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.5s'}}>
+            <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
+            <h4 className="text-lg font-bold text-white mb-1">Full Stack Web Developer</h4>
+            <p className="text-accent-gold font-semibold text-sm mb-2">Webcast Technologies Inc. • March 2021 - Feb 2022</p>
+            <p className="text-text-darker text-xs mb-2">Logistics API and Web Application | Store Tracker</p>
+            <p className="text-text-light text-sm">
+              Tech Stack: React, NodeJs, GraphQL, MySQL, Oracle | CakePHP, MySQL
+            </p>
+          </div>
+
+          <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.55s'}}>
+            <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
+            <h4 className="text-lg font-bold text-white mb-1">Full Stack Web Developer</h4>
+            <p className="text-accent-gold font-semibold text-sm mb-2">Osolabs (Freelance) • July 2020 - December 2020</p>
+            <p className="text-text-darker text-xs mb-2">Elevated Math | DogoDesign - DogoAdmin</p>
+            <p className="text-text-light text-sm">
+              Tech Stack: JavaScript, HTML, JSS, Elementor/Wordpress | PHP Laravel, Javascript, MySQL
+            </p>
+          </div>
+
+          <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.6s'}}>
+            <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
+            <h4 className="text-lg font-bold text-white mb-1">ASE / Data Engineer</h4>
+            <p className="text-accent-gold font-semibold text-sm mb-2">Accenture • Jan 2019 - Sept 2020</p>
+            <p className="text-text-darker text-xs mb-2">Enterprise Search</p>
+            <p className="text-text-light text-sm">
+              Tech Stack: Elasticsearch, Kibana, LogStash
+            </p>
+          </div>
+
+          <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.65s'}}>
+            <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
+            <h4 className="text-lg font-bold text-white mb-1">React Native Bootcamp Trainee</h4>
+            <p className="text-accent-gold font-semibold text-sm mb-2">Yondu Inc • Oct 2018 - Dec 2018</p>
+            <p className="text-text-light text-sm">
+              Tech Stack: React Native, Firebase
             </p>
           </div>
         </div>
@@ -48,30 +97,146 @@ export default function About() {
 
       <div className="mt-10 pt-10 border-t border-dark-border animate-slide-up" style={{animationDelay: '0.5s'}}>
         <h3 className="text-xl font-bold text-accent-gold mb-6">Technical Skills</h3>
-        <div className="grid md:grid-cols-2 gap-4">
-          {[
-            { category: '⚙️ Programming', skills: 'Java, PHP, JavaScript' },
-            { category: 'Frameworks', skills: 'Spring Boot, Spring Batch, Laravel, Cake PHP, ReactJs, NodeJs' },
-            { category: 'Frontend', skills: 'HTML, CSS, Bootstrap, Tailwind CSS, ReactJs' },
-            { category: 'Backend & DB', skills: 'MySQL, NoSQL, GraphQL, REST APIs' },
-            { category: '🤖 AI & Automation', skills: 'Generative AI, GitHub Copilot (Agentic AI), LLM Integration' },
-            { category: 'DevOps Tools', skills: 'Docker, Jenkins, Git, Maven, Linux, Ansible, SonarQube, Nexus, Tomcat, Selenium' },
-            { category: 'Version Control', skills: 'Git, SharePoint, SVN' },
-            { category: 'Big Data', skills: 'Hadoop, Elasticsearch' },
-            { category: 'Data Viz & ETL', skills: 'Tableau, Qlik Sense, Informatica Power Center' },
-            { category: 'Project Management', skills: 'Agile Methodology, Scrum, Kanban, Jira' }
-          ].map((skill, index) => (
-            <div
-              key={index}
-              className="bg-dark-border border border-dark-border rounded-lg p-4 hover:border-accent-gold/50 transition smooth-transition group animate-slide-up hover:bg-dark-border/80 hover:shadow-lg hover:shadow-accent-gold/10"
-              style={{animationDelay: `${0.6 + index * 0.08}s`}}
-            >
-              <h4 className="font-bold text-accent-gold mb-2 group-hover:text-accent-gold-light smooth-transition">
-                {skill.category}
-              </h4>
-              <p className="text-sm text-text-lighter">{skill.skills}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Programming Languages */}
+          <div className="bg-dark-border border border-dark-border rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/10 hover:-translate-y-1" style={{animationDelay: '0.6s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              ⚙️ Programming Languages
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['Java', 'PHP', 'JavaScript'].map((skill, idx) => (
+                <span key={idx} className="bg-dark-card px-3 py-1 rounded-full text-text-light border border-dark-border group-hover:border-accent-gold/50 text-sm smooth-transition">
+                  {skill}
+                </span>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Backend Frameworks */}
+          <div className="bg-dark-border border border-dark-border rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/10 hover:-translate-y-1" style={{animationDelay: '0.68s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              🔧 Backend Frameworks
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['Spring Boot', 'Spring Batch', 'Laravel', 'CakePHP', 'Node.js'].map((skill, idx) => (
+                <span key={idx} className="bg-dark-card px-3 py-1 rounded-full text-text-light border border-dark-border group-hover:border-accent-gold/50 text-sm smooth-transition">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Frontend Technologies */}
+          <div className="bg-dark-border border border-dark-border rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/10 hover:-translate-y-1" style={{animationDelay: '0.76s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              🎨 Frontend Technologies
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['React', 'React Native', 'HTML', 'CSS', 'Tailwind CSS', 'Elementor'].map((skill, idx) => (
+                <span key={idx} className="bg-dark-card px-3 py-1 rounded-full text-text-light border border-dark-border group-hover:border-accent-gold/50 text-sm smooth-transition">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Databases */}
+          <div className="bg-dark-border border border-dark-border rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/10 hover:-translate-y-1" style={{animationDelay: '0.84s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              💾 Databases
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['MySQL', 'Oracle', 'SyBase', 'Firebase'].map((skill, idx) => (
+                <span key={idx} className="bg-dark-card px-3 py-1 rounded-full text-text-light border border-dark-border group-hover:border-accent-gold/50 text-sm smooth-transition">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* APIs & Data */}
+          <div className="bg-dark-border border border-dark-border rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/10 hover:-translate-y-1" style={{animationDelay: '0.92s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              🔄 APIs & Data
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['GraphQL', 'REST APIs', 'JSON'].map((skill, idx) => (
+                <span key={idx} className="bg-dark-card px-3 py-1 rounded-full text-text-light border border-dark-border group-hover:border-accent-gold/50 text-sm smooth-transition">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Search & Logging */}
+          <div className="bg-dark-border border border-dark-border rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/10 hover:-translate-y-1" style={{animationDelay: '1s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              🔍 Search & Logging
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['Elasticsearch', 'Kibana', 'LogStash'].map((skill, idx) => (
+                <span key={idx} className="bg-dark-card px-3 py-1 rounded-full text-text-light border border-dark-border group-hover:border-accent-gold/50 text-sm smooth-transition">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Content Management */}
+          <div className="bg-dark-border border border-dark-border rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/10 hover:-translate-y-1" style={{animationDelay: '1.08s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              📝 Content Management
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['WordPress', 'Elementor', 'PHP CMS'].map((skill, idx) => (
+                <span key={idx} className="bg-dark-card px-3 py-1 rounded-full text-text-light border border-dark-border group-hover:border-accent-gold/50 text-sm smooth-transition">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Version Control */}
+          <div className="bg-dark-border border border-dark-border rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/10 hover:-translate-y-1" style={{animationDelay: '1.16s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              📚 Version Control
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['Git', 'SVN'].map((skill, idx) => (
+                <span key={idx} className="bg-dark-card px-3 py-1 rounded-full text-text-light border border-dark-border group-hover:border-accent-gold/50 text-sm smooth-transition">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* AI & Automation */}
+          <div className="bg-dark-border border border-accent-gold/30 rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/20 hover:-translate-y-1" style={{animationDelay: '1.24s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              🤖 AI & Automation
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['Generative AI', 'GitHub Copilot', 'LLM Integration'].map((skill, idx) => (
+                <span key={idx} className="bg-accent-gold/10 px-3 py-1 rounded-full text-accent-gold border border-accent-gold/50 group-hover:border-accent-gold text-sm smooth-transition font-medium">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Project Management */}
+          <div className="bg-dark-border border border-dark-border rounded-lg p-5 hover:border-accent-gold transition smooth-transition group animate-slide-up hover:shadow-lg hover:shadow-accent-gold/10 hover:-translate-y-1" style={{animationDelay: '1.32s'}}>
+            <h4 className="font-bold text-accent-gold mb-3 group-hover:text-accent-gold-light smooth-transition text-lg">
+              📊 Project Management
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {['Agile', 'Scrum', 'Kanban', 'Jira'].map((skill, idx) => (
+                <span key={idx} className="bg-dark-card px-3 py-1 rounded-full text-text-light border border-dark-border group-hover:border-accent-gold/50 text-sm smooth-transition">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
