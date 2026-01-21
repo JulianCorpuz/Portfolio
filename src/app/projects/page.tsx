@@ -15,11 +15,11 @@ export default function Projects() {
             className="bg-dark-border border border-dark-border rounded-xl p-5 hover:border-accent-gold transition-all duration-300 group animate-slide-up hover:shadow-xl hover:shadow-accent-gold/10 hover:-translate-y-2"
             style={{animationDelay: `${index * 0.1}s`}}
           >
-            <div className="mb-4 h-40 border border-dark-border rounded-lg overflow-hidden relative group-hover:border-accent-gold/50 smooth-transition">
+            <div className="mb-4 h-40 border border-dark-border rounded-lg overflow-hidden relative group-hover:border-accent-gold/50 smooth-transition bg-dark-card">
               <img 
                 src={project.screenshot} 
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-accent-gold/0 to-accent-gold/10 opacity-0 group-hover:opacity-100 smooth-transition"></div>
             </div>
