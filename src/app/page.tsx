@@ -229,51 +229,6 @@ function SkillsSection() {
     )
   }
 
-  // Compact animated donut for tile chips
-  const MiniDonut = ({ level }: { level: number }) => {
-    const [value, setValue] = useState(0)
-    useEffect(() => {
-      const target = level
-      const step = Math.max(1, Math.floor(target / 40))
-      const id = setInterval(() => {
-        setValue((v) => {
-          const next = v + step
-          if (next >= target) {
-            clearInterval(id)
-            return target
-          }
-          return next
-        })
-      }, 20)
-      return () => clearInterval(id)
-    }, [level])
-
-    const deg = value * 3.6
-    return (
-      <div
-        className="relative w-16 h-16 rounded-full shadow-md shadow-accent-gold/10"
-        style={{ background: `conic-gradient(#ffc107 ${deg}deg, #2a2a3e ${deg}deg)` }}
-      >
-        <div className="absolute inset-0 rounded-full ring-2 ring-accent-gold/15" />
-        <div className="absolute inset-2 bg-dark-bg rounded-full" />
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <span className="text-accent-gold font-semibold text-xs">{value}%</span>
-        </div>
-      </div>
-    )
-  }
-
-  const Hexagon = ({ level }: { level: number }) => (
-    <div
-      className="w-16 h-16"
-      style={{
-        clipPath: 'polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)',
-        backgroundColor: `rgba(255,193,7, ${0.2 + (level / 100) * 0.8})`,
-        border: '1px solid #2a2a3e',
-      }}
-    />
-  )
-
   const Dots = ({ level }: { level: number }) => {
     const filled = Math.round(level / 20)
     return (
