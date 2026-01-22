@@ -54,12 +54,22 @@ export default function ContactForm() {
         body: JSON.stringify(form),
       })
 
+      // Check if response is ok before parsing JSON
+      if (!response.ok) {
+        const data = await response.json()
+        setSubmit({
+          status: 'error',
+          message: data.message || 'Failed to send message',
+        })
+        return
+      }
+
       const data = await response.json()
 
       if (data.success) {
         setSubmit({
           status: 'success',
-          message: 'Message sent successfully!',
+          message: data.message || 'Message sent successfully!',
         })
         setForm({ name: '', email: '', message: '' })
       } else {
