@@ -18,5 +18,31 @@
       "Implement expense analytics dashboard",
       "Add export functionality for reports"
     ]
+  },
+  {
+    "id": "ranked",
+    "title": "RANKED - Gamified Social Media Platform",
+    "description": "RPG-style competitive social media platform with XP, levels, and leaderboards",
+    "fullDescription": "RANKED transforms social networking into an RPG-style competitive experience where every action counts. Post content, engage with others, and earn XP. Progress through 50 levels from Novice to Legendary, unlock 25+ unique achievement badges, and compete on global leaderboards. Built with enterprise-grade architecture to showcase Spring Batch expertise, SOLID principles, and modern full-stack development practices.",
+    "technologies": ["Java 17", "Spring Boot", "Spring Batch", "Spring Security", "MongoDB", "React", "Vite", "Tailwind CSS", "JWT"],
+    "screenshot": "/images/ranked.png",
+    "githubLink": "https://github.com/JulianCorpuz/Ranked",
+    "liveLink": "",
+    "technicalDecisions": [
+      "Spring Batch for background gamification jobs (XP calculation, level progression, badge assignment)",
+      "JWT-based stateless authentication with BCrypt password hashing",
+      "MongoDB Atlas for cloud-hosted database with Spring Data MongoDB",
+      "React 18 with Vite for modern frontend tooling and fast development",
+      "Tailwind CSS for responsive, mobile-first design with dark mode optimization",
+      "Role-based access control (USER/ADMIN) with Spring Security",
+      "Clean architecture with layer separation following SOLID principles"
+    ],
+    "futureImprovements": [
+      "Complete Phase 2: Social features (posts, likes, comments, follow system, activity feed)",
+      "Complete Phase 3: Full gamification with Spring Batch jobs (streaks, advanced badges)",
+      "Add Phase 4: Advanced animations, real-time notifications, performance optimization",
+      "Implement comprehensive testing suite",
+      "Add real-time WebSocket notifications"
+    ]
   }
 ]
