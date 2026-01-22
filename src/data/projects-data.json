@@ -1,48 +1,105 @@
 [
   {
     "id": "expensemate",
-    "title": "ExpenseMate",
-    "description": "Expense Tracker Web App",
-    "fullDescription": "A comprehensive expense tracking application that helps users manage their finances effectively. Features include expense categorization, budget tracking, and detailed financial reports.",
-    "technologies": ["React", "Firebase", "JavaScript", "CSS"],
+    "title": "ExpenseMate - Personal Finance Tracker",
+    "description": "Production-ready full-stack personal finance tracking application",
+    "fullDescription": "ExpenseMate is a modern, full-stack web application designed to help users track their personal finances effortlessly. Built with professional development practices, it provides a secure, intuitive, and responsive interface for managing income and expenses. This project showcases clean architecture, secure authentication, real-time data synchronization, responsive UI/UX design, RESTful API design, database security rules, and production deployment strategies.",
+    "technologies": ["React 18", "Vite", "Node.js", "Express", "Firebase", "Firestore", "Tailwind CSS", "JWT", "BCrypt"],
     "screenshot": "/images/expensemate.png",
     "githubLink": "https://github.com/JulianCorpuz/ExpenseMate",
     "liveLink": "https://expensemate-902f3.web.app/",
-    "technicalDecisions": [
-      "Firebase for real-time data synchronization",
-      "React for component-based architecture",
-      "Responsive design for mobile and desktop"
+    "features": [
+      "🔐 Secure Authentication - Email/password & Google OAuth with JWT and session persistence",
+      "💸 Complete Expense Management - Add, edit, delete transactions with categorization and notes",
+      "📊 Real-time Dashboard - Instant financial overview with income/expense tracking and balance calculation",
+      "🎨 Modern UI/UX - Dark mode, responsive design, toast notifications, and loading states",
+      "🔒 Enterprise Security - Firebase Auth, Firestore security rules, CORS protection, and rate limiting",
+      "📱 Mobile-First Design - Works seamlessly on all devices with real-time updates"
     ],
+    "technicalDecisions": [
+      "Firebase Authentication & Firestore for industry-standard auth and NoSQL database",
+      "React 18 + Vite for lightning-fast build tool and modern UI development",
+      "Express.js backend with Firebase Admin SDK for secure server-side operations",
+      "Tailwind CSS for utility-first, responsive design system",
+      "JWT token verification with BCrypt password hashing for enhanced security",
+      "Helmet.js for security headers and Express Rate Limit for API protection",
+      "CORS configuration and input validation for robust API security",
+      "Firebase Hosting + Render deployment for production-ready hosting"
+    ],
+    "architecture": {
+      "frontend": "React SPA with component-based architecture, auth context, protected routes",
+      "backend": "Express.js RESTful API with middleware, controllers, and services",
+      "database": "Cloud Firestore with security rules and data validation",
+      "auth": "Firebase Authentication with JWT tokens and role-based access"
+    },
     "futureImprovements": [
-      "Add recurring expenses support",
-      "Implement expense analytics dashboard",
-      "Add export functionality for reports"
+      "Budget planning and alerts system",
+      "Recurring transactions automation",
+      "Data export to CSV/PDF",
+      "Advanced data visualization with charts",
+      "Multi-currency support",
+      "Receipt image upload with OCR",
+      "Spending insights and AI recommendations",
+      "Savings goals tracking",
+      "Bill reminders and notifications",
+      "Mobile app with React Native"
     ]
   },
   {
     "id": "ranked",
     "title": "RANKED - Gamified Social Media Platform",
-    "description": "RPG-style competitive social media platform with XP, levels, and leaderboards",
-    "fullDescription": "RANKED transforms social networking into an RPG-style competitive experience where every action counts. Post content, engage with others, and earn XP. Progress through 50 levels from Novice to Legendary, unlock 25+ unique achievement badges, and compete on global leaderboards. Built with enterprise-grade architecture to showcase Spring Batch expertise, SOLID principles, and modern full-stack development practices.",
-    "technologies": ["Java 17", "Spring Boot", "Spring Batch", "Spring Security", "MongoDB", "React", "Vite", "Tailwind CSS", "JWT"],
+    "description": "Enterprise-grade RPG-style social network with gamification engine",
+    "fullDescription": "RANKED transforms social networking into an RPG-style competitive experience where every action earns XP and every user climbs the leaderboard. Built to demonstrate enterprise-level Spring Boot development, this platform features a complete gamification system with 50 progressive levels, 25+ achievement badges, daily streak multipliers, and global leaderboards. The architecture showcases Spring Batch expertise for batch processing, SOLID principles, clean code architecture, and production-ready deployment strategies.",
+    "technologies": ["Java 17", "Spring Boot 3.2.1", "Spring Batch", "Spring Security", "Spring Data MongoDB", "MongoDB Atlas", "React 18", "Vite 5", "Tailwind CSS 3.4", "JWT", "BCrypt", "Maven"],
     "screenshot": "/images/RANKED.png",
     "githubLink": "https://github.com/JulianCorpuz/Ranked",
     "liveLink": "",
+    "features": [
+      "🎮 Complete Gamification System - XP for every action, 50 progressive levels (Novice to Legendary)",
+      "🏆 Achievement Engine - Unlock 25+ unique badges with daily streak multipliers",
+      "📊 Global Leaderboards - Compete with users worldwide in real-time rankings",
+      "🔐 Enterprise Authentication - JWT-based stateless auth with BCrypt and role-based access (USER/ADMIN)",
+      "📱 Modern Responsive UI - Bold competitive design, dark mode optimized, mobile-first approach",
+      "⚡ Real-time Updates - Animated XP progress bars, achievement notifications, instant feedback"
+    ],
     "technicalDecisions": [
-      "Spring Batch for background gamification jobs (XP calculation, level progression, badge assignment)",
-      "JWT-based stateless authentication with BCrypt password hashing",
-      "MongoDB Atlas for cloud-hosted database with Spring Data MongoDB",
-      "React 18 with Vite for modern frontend tooling and fast development",
-      "Tailwind CSS for responsive, mobile-first design with dark mode optimization",
-      "Role-based access control (USER/ADMIN) with Spring Security",
-      "Clean architecture with layer separation following SOLID principles"
+      "Spring Batch for background gamification jobs - XP calculation, level progression, badge assignment, leaderboard generation, streak maintenance",
+      "Spring Boot 3.2.1 with Java 17 for modern enterprise-grade backend architecture",
+      "Spring Security with JWT tokens for stateless authentication and session management",
+      "Spring Data MongoDB with MongoDB Atlas for cloud-hosted, scalable NoSQL database",
+      "BCrypt password hashing with configurable strength for enhanced security",
+      "React 18 + Vite 5 for modern frontend with fast development and optimized builds",
+      "Tailwind CSS 3.4 for utility-first, responsive design with dark mode support",
+      "Maven for dependency management and build automation",
+      "CORS configuration for secure cross-origin requests",
+      "Clean architecture with layer separation - Controllers, Services, Repositories, DTOs",
+      "Global exception handling with custom error responses",
+      "DTO pattern for API responses to prevent data leakage"
+    ],
+    "architecture": {
+      "backend": "Spring Boot with layered architecture - Auth, User, Social, Gamification modules",
+      "frontend": "React SPA with context API, protected routes, and API service layer",
+      "database": "MongoDB Atlas with indexed collections for performance",
+      "security": "JWT + Spring Security with role-based access control",
+      "batch": "Spring Batch jobs for scheduled gamification calculations"
+    },
+    "developmentPhases": [
+      "✅ Phase 1: Authentication & User Management - Complete with JWT, validation, exception handling",
+      "🚧 Phase 2: Social Features - Posts, likes, comments, follow system, activity feed, pagination",
+      "📅 Phase 3: Gamification Engine - Spring Batch jobs for XP, levels, badges, leaderboards, streaks",
+      "🎨 Phase 4: UI Polish - Advanced animations, real-time notifications, performance optimization, SEO"
     ],
     "futureImprovements": [
-      "Complete Phase 2: Social features (posts, likes, comments, follow system, activity feed)",
-      "Complete Phase 3: Full gamification with Spring Batch jobs (streaks, advanced badges)",
-      "Add Phase 4: Advanced animations, real-time notifications, performance optimization",
-      "Implement comprehensive testing suite",
-      "Add real-time WebSocket notifications"
+      "Complete Phase 2: Full social features with posts, likes, comments, and follow system",
+      "Complete Phase 3: Spring Batch gamification jobs for XP calculation and badge assignment",
+      "Implement Phase 4: Advanced UI animations and real-time WebSocket notifications",
+      "Add comprehensive unit and integration testing suite",
+      "Implement caching with Redis for improved performance",
+      "Add search functionality with pagination for large datasets",
+      "Implement PWA for offline support",
+      "Add analytics integration for user insights",
+      "Accessibility improvements for WCAG compliance",
+      "Internationalization (i18n) for multi-language support"
     ]
   }
 ]
