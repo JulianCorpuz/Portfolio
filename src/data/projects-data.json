@@ -25,7 +25,7 @@
     "description": "RPG-style competitive social media platform with XP, levels, and leaderboards",
     "fullDescription": "RANKED transforms social networking into an RPG-style competitive experience where every action counts. Post content, engage with others, and earn XP. Progress through 50 levels from Novice to Legendary, unlock 25+ unique achievement badges, and compete on global leaderboards. Built with enterprise-grade architecture to showcase Spring Batch expertise, SOLID principles, and modern full-stack development practices.",
     "technologies": ["Java 17", "Spring Boot", "Spring Batch", "Spring Security", "MongoDB", "React", "Vite", "Tailwind CSS", "JWT"],
-    "screenshot": "/images/ranked.png",
+    "screenshot": "/images/RANKED.png",
     "githubLink": "https://github.com/JulianCorpuz/Ranked",
     "liveLink": "",
     "technicalDecisions": [
