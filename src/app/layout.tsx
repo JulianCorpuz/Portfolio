@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Sidebar from '@/components/Sidebar'
+import ChatWidget from '@/components/ChatWidget'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -37,6 +38,9 @@ export default function RootLayout({
             </div>
           </div>
         </div>
+
+        {/* AI Chat Widget */}
+        <ChatWidget />
       </body>
     </html>
   )
