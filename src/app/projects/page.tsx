@@ -1,5 +1,6 @@
 import projectsData from '@/data/projects-data.json'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Projects() {
   return (
@@ -19,10 +20,11 @@ export default function Projects() {
             {/* Project Header with Screenshot */}
             <div className="grid md:grid-cols-2 gap-0">
               <div className="relative h-64 md:h-96 border-b md:border-b-0 md:border-r border-dark-border overflow-hidden bg-dark-card group-hover:border-accent-gold/50 smooth-transition">
-                <img 
+                <Image 
                   src={project.screenshot} 
                   alt={project.title}
-                  className="w-full h-full object-contain group-hover:scale-105 smooth-transition duration-700"
+                  fill
+                  className="object-contain group-hover:scale-105 smooth-transition duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-accent-gold/10 opacity-0 group-hover:opacity-100 smooth-transition duration-700"></div>
               </div>
