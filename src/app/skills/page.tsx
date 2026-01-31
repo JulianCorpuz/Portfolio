@@ -83,7 +83,7 @@ export default function Skills() {
 
   return (
     <div className="animate-fade-in">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-8 animate-slide-up">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-light mb-6 sm:mb-8 animate-slide-up">
         <span className="bg-gradient-to-r from-accent-gold via-accent-gold-light to-accent-gold bg-clip-text text-transparent animate-pulse">
           Skills & Expertise
         </span>

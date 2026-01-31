@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Projects() {
   return (
     <div className="animate-fade-in max-w-7xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 animate-slide-up">Featured Projects</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-text-light mb-2 animate-slide-up">Featured Projects</h2>
       <p className="text-text-lighter mb-12 animate-slide-up max-w-3xl" style={{animationDelay: '0.1s'}}>
         Production-ready applications showcasing enterprise architecture, modern tech stacks, and best practices
       </p>
@@ -29,8 +29,8 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-accent-gold/10 opacity-0 group-hover:opacity-100 smooth-transition duration-700"></div>
               </div>
               
-              <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-accent-gold transition">
+              <div className="p-8 flex flex-col justify-center project-content-light">
+                <h3 className="text-2xl md:text-3xl font-bold text-text-light mb-3 group-hover:text-accent-gold transition">
                   {project.title}
                 </h3>
                 
@@ -70,7 +70,7 @@ export default function Projects() {
             </div>
 
             {/* Tech Stack */}
-            <div className="px-8 py-6 border-t border-dark-border bg-dark-card/30">
+            <div className="px-8 py-6 border-t border-dark-border bg-dark-card/30 tech-stack-light">
               <h4 className="text-sm font-semibold text-text-lighter mb-3 uppercase tracking-wider">Tech Stack</h4>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, idx) => (

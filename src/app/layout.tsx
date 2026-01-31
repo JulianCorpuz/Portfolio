@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import Navigation from '@/components/Navigation'
 import Sidebar from '@/components/Sidebar'
 import ChatWidget from '@/components/ChatWidget'
@@ -16,8 +17,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="bg-dark-bg text-text-light">
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`
+            (function() {
+              try {
+                var stored = localStorage.getItem('theme');
+                var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+                var theme = stored || (prefersLight ? 'light' : 'dark');
+                document.documentElement.dataset.theme = theme;
+                if (theme === 'light') document.documentElement.classList.add('light');
+              } catch (e) {}
+            })();
+          `}
+        </Script>
         {/* Sticky Header Navigation */}
         <div className="fixed top-0 left-0 right-0 z-50">
           <Navigation />

@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="animate-fade-in space-y-8">
       <div className="animate-slide-up">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-text-light mb-4">About Me</h2>
         <div className="space-y-4 text-text-lighter leading-relaxed">
           <p className="animate-slide-up" style={{animationDelay: '0.1s'}}>
             Senior Full Stack Engineer with 6+ years of experience specializing in backend development using Java and the Spring Framework. Designed and maintained microservices-based backend systems, enabling scalable, resilient, and independently deployable services. I build enterprise-grade solutions and integrate Generative AI to solve complex business problems.
@@ -17,7 +17,7 @@ export default function About() {
           <div className="lg:col-span-7 space-y-6">
             <div className="border-l-2 border-accent-gold pl-6 pb-6 relative animate-slide-up hover:border-accent-gold-light smooth-transition" style={{animationDelay: '0.3s'}}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-accent-gold rounded-full border-2 border-dark-bg animate-pulse-gold"></div>
-              <h4 className="text-lg font-bold text-white mb-1">Full Stack Engineering Sr Developer</h4>
+              <h4 className="text-lg font-bold text-text-light mb-1">Full Stack Engineering Sr Developer</h4>
               <p className="text-accent-gold font-semibold text-sm mb-2">Accenture • May 2023 - Present</p>
               <p className="text-text-darker text-xs mb-2">Risk Management System</p>
               <p className="text-text-light text-sm">
@@ -27,7 +27,7 @@ export default function About() {
 
             <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.4s'}}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
-              <h4 className="text-lg font-bold text-white mb-1">Software Engineer (Java Developer)</h4>
+              <h4 className="text-lg font-bold text-text-light mb-1">Software Engineer (Java Developer)</h4>
               <p className="text-accent-gold font-semibold text-sm mb-2">Norima Technologies Inc. • May 2022 - March 2023</p>
               <p className="text-text-darker text-xs mb-2">Majesco: Insurance System</p>
               <p className="text-text-light text-sm">
@@ -37,7 +37,7 @@ export default function About() {
 
             <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.45s'}}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
-              <h4 className="text-lg font-bold text-white mb-1">Full Stack Web Developer</h4>
+              <h4 className="text-lg font-bold text-text-light mb-1">Full Stack Web Developer</h4>
               <p className="text-accent-gold font-semibold text-sm mb-2">Osolabs (Freelance) • Nov 2021 - April 2022</p>
               <p className="text-text-darker text-xs mb-2">DogoDesign - DogoAdmin (Inventory Store and Admin Web Application)</p>
               <p className="text-text-light text-sm">
@@ -47,7 +47,7 @@ export default function About() {
 
             <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.5s'}}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
-              <h4 className="text-lg font-bold text-white mb-1">Full Stack Web Developer</h4>
+              <h4 className="text-lg font-bold text-text-light mb-1">Full Stack Web Developer</h4>
               <p className="text-accent-gold font-semibold text-sm mb-2">Webcast Technologies Inc. • March 2021 - Feb 2022</p>
               <p className="text-text-darker text-xs mb-2">Logistics API and Web Application | Store Tracker</p>
               <p className="text-text-light text-sm">
@@ -57,7 +57,7 @@ export default function About() {
 
             <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.55s'}}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
-              <h4 className="text-lg font-bold text-white mb-1">Full Stack Web Developer</h4>
+              <h4 className="text-lg font-bold text-text-light mb-1">Full Stack Web Developer</h4>
               <p className="text-accent-gold font-semibold text-sm mb-2">Osolabs (Freelance) • July 2020 - December 2020</p>
               <p className="text-text-darker text-xs mb-2">Elevated Math | DogoDesign - DogoAdmin</p>
               <p className="text-text-light text-sm">
@@ -67,7 +67,7 @@ export default function About() {
 
             <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.6s'}}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
-              <h4 className="text-lg font-bold text-white mb-1">ASE / Data Engineer</h4>
+              <h4 className="text-lg font-bold text-text-light mb-1">ASE / Data Engineer</h4>
               <p className="text-accent-gold font-semibold text-sm mb-2">Accenture • Jan 2019 - Sept 2020</p>
               <p className="text-text-darker text-xs mb-2">Enterprise Search</p>
               <p className="text-text-light text-sm">
@@ -77,7 +77,7 @@ export default function About() {
 
             <div className="border-l-2 border-dark-border pl-6 relative animate-slide-up hover:border-accent-gold/50 smooth-transition" style={{animationDelay: '0.65s'}}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-dark-border rounded-full border-2 border-dark-bg hover:bg-accent-gold smooth-transition"></div>
-              <h4 className="text-lg font-bold text-white mb-1">React Native Bootcamp Trainee</h4>
+              <h4 className="text-lg font-bold text-text-light mb-1">React Native Bootcamp Trainee</h4>
               <p className="text-accent-gold font-semibold text-sm mb-2">Yondu Inc • Oct 2018 - Dec 2018</p>
               <p className="text-text-light text-sm">
                 Tech Stack: React Native, Firebase
@@ -94,15 +94,15 @@ export default function About() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-text-light text-sm">Experience</span>
-                    <span className="text-white font-bold">6+ Years</span>
+                    <span className="text-text-light font-bold">6+ Years</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-text-light text-sm">Companies</span>
-                    <span className="text-white font-bold">5+</span>
+                    <span className="text-text-light font-bold">5+</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-text-light text-sm">Projects</span>
-                    <span className="text-white font-bold">15+</span>
+                    <span className="text-text-light font-bold">15+</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-text-light text-sm">Current Role</span>
@@ -155,11 +155,11 @@ export default function About() {
               </div>
 
               {/* Action Buttons */}
-              <div className="bg-dark-border border border-dark-border rounded-lg p-5 animate-slide-up hover:border-accent-gold/50 smooth-transition space-y-3 hover:shadow-lg hover:shadow-accent-gold/10" style={{animationDelay: '0.5s'}}>
+              <div className="bg-dark-border border border-dark-border rounded-lg p-5 animate-slide-up hover:border-accent-gold/50 smooth-transition space-y-3 hover:shadow-lg hover:shadow-accent-gold/10 btn-container-light" style={{animationDelay: '0.5s'}}>
                 <a
                   href="/resume.pdf"
                   download
-                  className="block w-full bg-accent-gold hover:bg-accent-gold-light text-dark-bg font-bold py-3 px-4 rounded-lg transition text-center smooth-transition hover:scale-105 hover:shadow-lg hover:shadow-accent-gold/30"
+                  className="block w-full bg-accent-gold hover:bg-accent-gold-light text-dark-bg font-bold py-3 px-4 rounded-lg transition text-center smooth-transition hover:scale-105 hover:shadow-lg hover:shadow-accent-gold/30 btn-light"
                 >
                   📄 Download Resume
                 </a>
@@ -167,7 +167,7 @@ export default function About() {
                   href="https://www.linkedin.com/in/julius-ian-corpuz-8bb025165/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-dark-card hover:bg-dark-border text-accent-gold font-bold py-3 px-4 rounded-lg border border-accent-gold/30 hover:border-accent-gold transition text-center smooth-transition hover:scale-105"
+                  className="block w-full bg-dark-card hover:bg-dark-border text-accent-gold font-bold py-3 px-4 rounded-lg border border-accent-gold/30 hover:border-accent-gold transition text-center smooth-transition hover:scale-105 btn-secondary-light"
                 >
                   💼 View LinkedIn
                 </a>

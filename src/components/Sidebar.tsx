@@ -33,7 +33,7 @@ export default function Sidebar({ isOpen = false }: SidebarProps) {
         </div>
         
         <div className="text-center lg:text-left">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white animate-slide-down break-words">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-text-light animate-slide-down break-words">
             Julius Ian Corpuz
           </h1>
           <p className="text-accent-gold text-xs sm:text-sm md:text-base font-semibold mt-1 animate-slide-down" style={{animationDelay: '0.1s'}}>
@@ -45,9 +45,10 @@ export default function Sidebar({ isOpen = false }: SidebarProps) {
       {/* Divider */}
       <div className="w-full h-px bg-gradient-to-r from-transparent via-accent-gold to-transparent my-6"></div>
 
-      {/* Contact Info */}
-      <div className="space-y-4">
-        <div className="flex gap-3 md:flex-col md:gap-4">
+      <div id="sidebar-details" className={`${expanded ? 'block' : 'hidden'} md:block`}>
+        {/* Contact Info */}
+        <div className="space-y-4">
+          <div className="flex flex-col gap-4 sm:flex-row sm:gap-3 md:flex-col md:gap-4">
           <div className="flex items-start gap-3 group cursor-pointer hover:scale-105 smooth-transition animate-slide-up" style={{animationDelay: '0.2s'}}>
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent-gold/20 to-accent-gold/5 border border-accent-gold/30 flex items-center justify-center flex-shrink-0 text-accent-gold group-hover:border-accent-gold smooth-transition">
               ✉
@@ -72,39 +73,42 @@ export default function Sidebar({ isOpen = false }: SidebarProps) {
 
           <div className="flex items-start gap-3 group cursor-pointer hover:scale-105 smooth-transition animate-slide-up" style={{animationDelay: '0.4s'}}>
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent-gold/20 to-accent-gold/5 border border-accent-gold/30 flex items-center justify-center flex-shrink-0 text-accent-gold group-hover:border-accent-gold smooth-transition">
-              💼
+              🚀
             </div>
             <div>
-              <p className="text-xs uppercase text-text-darker font-bold tracking-wider">Company</p>
-              <p className="text-sm text-text-light">Accenture</p>
+              <p className="text-xs uppercase text-text-darker font-bold tracking-wider">Core Stack</p>
+              <p className="text-sm text-text-light">Java • Spring • SQL</p>
             </div>
           </div>
+          </div>
         </div>
-      </div>
 
-      {/* Divider */}
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-accent-gold to-transparent my-6"></div>
+        {/* Divider */}
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-accent-gold to-transparent my-6"></div>
 
-      {/* Social Links */}
-      <div className="flex gap-4 justify-center md:justify-start animate-slide-up" style={{animationDelay: '0.5s'}}>
-        <a href="https://linkedin.com/in/julius-ian-corpuz-8bb025165" target="_blank" rel="noopener noreferrer" 
-           className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold text-xl hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
-          in
-        </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
-           className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold text-xl hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
-          ⚙
-        </a>
-        <a href="mailto:iancorpuz0118@gmail.com" 
-           className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold text-xl hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
-          ✉
-        </a>
+        {/* Social Links */}
+        <div className="flex gap-4 justify-center md:justify-start animate-slide-up" style={{animationDelay: '0.5s'}}>
+          <a href="https://linkedin.com/in/julius-ian-corpuz-8bb025165" target="_blank" rel="noopener noreferrer" 
+             className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold text-xl hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
+            in
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+             className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold text-xl hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
+            ⚙
+          </a>
+          <a href="mailto:iancorpuz0118@gmail.com" 
+             className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold text-xl hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
+            ✉
+          </a>
+        </div>
       </div>
 
       {/* Toggle button for mobile */}
       <button 
         onClick={() => setExpanded(!expanded)}
-        className="md:hidden w-full mt-6 py-3 px-4 bg-accent-gold text-dark-bg font-semibold rounded-lg hover:bg-accent-gold-light transition smooth-transition active:scale-95 hover:shadow-lg hover:shadow-accent-gold/30"
+        className="md:hidden w-full mt-6 py-3 px-4 bg-accent-gold text-dark-bg font-semibold rounded-lg hover:bg-accent-gold-light transition smooth-transition active:scale-95 hover:shadow-lg hover:shadow-accent-gold/30 btn-light"
+        aria-expanded={expanded}
+        aria-controls="sidebar-details"
       >
         {expanded ? 'Close' : 'Show More'}
       </button>

@@ -10,15 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         // Dark theme inspired by vCard
-        'dark-bg': '#0f0f1e',
-        'dark-card': '#1a1a2e',
-        'dark-border': '#2a2a3e',
-        'accent-gold': '#ffc107',
-        'accent-gold-light': '#ffd54f',
-        'accent-gold-dark': '#ffb300',
-        'text-light': '#d4d4d4',
-        'text-lighter': '#a8a8a8',
-        'text-darker': '#7a7a8e',
+        'dark-bg': 'rgb(var(--color-dark-bg) / <alpha-value>)',
+        'dark-card': 'rgb(var(--color-dark-card) / <alpha-value>)',
+        'dark-border': 'rgb(var(--color-dark-border) / <alpha-value>)',
+        'accent-gold': 'rgb(var(--color-accent-gold) / <alpha-value>)',
+        'accent-gold-light': 'rgb(var(--color-accent-gold-light) / <alpha-value>)',
+        'accent-gold-dark': 'rgb(var(--color-accent-gold-dark) / <alpha-value>)',
+        'text-light': 'rgb(var(--color-text-light) / <alpha-value>)',
+        'text-lighter': 'rgb(var(--color-text-lighter) / <alpha-value>)',
+        'text-darker': 'rgb(var(--color-text-darker) / <alpha-value>)',
       },
       fontFamily: {
         sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -26,8 +26,8 @@ const config: Config = {
       backgroundImage: {
         'gradient-onyx': 'linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%)',
         'gradient-yellow': 'linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%)',
-        'gradient-card': 'linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 193, 7, 0.05) 100%)',
-        'gradient-dark': 'linear-gradient(135deg, #1a1a2e 0%, #16172a 100%)',
+        'gradient-card': 'linear-gradient(135deg, rgb(var(--color-accent-gold) / 0.12) 0%, rgb(var(--color-accent-gold) / 0.06) 100%)',
+        'gradient-dark': 'linear-gradient(135deg, rgb(var(--color-dark-card)) 0%, rgb(var(--color-dark-bg)) 100%)',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

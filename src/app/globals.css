@@ -13,10 +13,118 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --color-dark-bg: 15 15 30;
+  --color-dark-card: 26 26 46;
+  --color-dark-border: 42 42 62;
+  --color-accent-gold: 255 193 7;
+  --color-accent-gold-light: 255 213 79;
+  --color-accent-gold-dark: 255 179 0;
+  --color-text-light: 212 212 212;
+  --color-text-lighter: 168 168 168;
+  --color-text-darker: 122 122 142;
+  color-scheme: dark;
+}
+
+:root[data-theme='light'],
+.light {
+  --color-dark-bg: 248 249 252;
+  --color-dark-card: 255 255 255;
+  --color-dark-border: 220 224 236;
+  --color-accent-gold: 139 90 0;
+  --color-accent-gold-light: 160 108 20;
+  --color-accent-gold-dark: 110 70 0;
+  --color-text-light: 30 35 50;
+  --color-text-lighter: 80 90 110;
+  --color-text-darker: 140 150 170;
+  color-scheme: light;
+}
+
 body {
-  background: #0f0f1e;
-  color: #d4d4d4;
+  background: rgb(var(--color-dark-bg));
+  color: rgb(var(--color-text-light));
   min-height: 100vh;
+}
+
+/* Theme-aware utility overrides (ensures runtime toggling works) */
+.bg-dark-bg { background-color: rgb(var(--color-dark-bg)) !important; }
+.bg-dark-card { background-color: rgb(var(--color-dark-card)) !important; }
+.bg-dark-border { background-color: rgb(var(--color-dark-border)) !important; }
+.bg-accent-gold { background-color: rgb(var(--color-accent-gold)) !important; }
+.bg-accent-gold-light { background-color: rgb(var(--color-accent-gold-light)) !important; }
+.bg-accent-gold-dark { background-color: rgb(var(--color-accent-gold-dark)) !important; }
+
+.text-text-light { color: rgb(var(--color-text-light)) !important; }
+.text-text-lighter { color: rgb(var(--color-text-lighter)) !important; }
+.text-text-darker { color: rgb(var(--color-text-darker)) !important; }
+.text-accent-gold { color: rgb(var(--color-accent-gold)) !important; }
+.text-accent-gold-light { color: rgb(var(--color-accent-gold-light)) !important; }
+.text-accent-gold-dark { color: rgb(var(--color-accent-gold-dark)) !important; }
+
+.border-dark-border { border-color: rgb(var(--color-dark-border)) !important; }
+.border-accent-gold { border-color: rgb(var(--color-accent-gold)) !important; }
+.border-accent-gold\/30 { border-color: rgb(var(--color-accent-gold) / 0.3) !important; }
+.border-accent-gold\/50 { border-color: rgb(var(--color-accent-gold) / 0.5) !important; }
+
+.bg-gradient-card {
+  background-image: linear-gradient(
+    135deg,
+    rgb(var(--color-accent-gold) / 0.12) 0%,
+    rgb(var(--color-accent-gold) / 0.06) 100%
+  ) !important;
+}
+
+.bg-gradient-dark {
+  background-image: linear-gradient(
+    135deg,
+    rgb(var(--color-dark-card)) 0%,
+    rgb(var(--color-dark-bg)) 100%
+  ) !important;
+}
+
+/* Light mode specific overrides */
+:root.light nav.nav-light {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+:root.light button.btn-light {
+  color: rgb(var(--color-text-light)) !important;
+}
+
+:root.light .btn-container-light {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border-color: rgb(var(--color-dark-border)) !important;
+}
+
+:root.light .btn-secondary-light {
+  background-color: rgb(249, 250, 251) !important;
+}
+
+:root.light .btn-secondary-light:hover {
+  background-color: rgb(243, 244, 246) !important;
+}
+
+/* Light mode overrides for project cards */
+:root.light .project-content-light {
+  background-color: transparent !important;
+}
+
+:root.light .tech-stack-light {
+  background-color: rgb(249, 250, 251) !important;
+  border-color: rgb(220, 224, 236) !important;
+}
+
+:root.light .bg-dark-card\/30 {
+  background-color: rgb(249, 250, 251) !important;
+}
+
+/* Bright yellow for buttons in both themes */
+.bg-accent-gold {
+  background-color: #ffc107 !important;
+}
+
+.bg-accent-gold:hover {
+  background-color: #ffd54f !important;
 }
 
 /* Scrollbar styling */
@@ -25,17 +133,17 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a2e;
+  background: rgb(var(--color-dark-card));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffc107;
+  background: rgb(var(--color-accent-gold));
   border-radius: 5px;
   transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffd54f;
+  background: rgb(var(--color-accent-gold-light));
 }
 
 /* Animations */
