@@ -157,8 +157,8 @@ export default function About() {
               {/* Action Buttons */}
               <div className="bg-dark-border border border-dark-border rounded-lg p-5 animate-slide-up hover:border-accent-gold/50 smooth-transition space-y-3 hover:shadow-lg hover:shadow-accent-gold/10 btn-container-light" style={{animationDelay: '0.5s'}}>
                 <a
-                  href="/resume.pdf"
-                  download
+                  href="/documents/JuliusIanCorpuz_CV_202411.pdf"
+                  download="JuliusIanCorpuz_CV_202411.pdf"
                   className="block w-full bg-accent-gold hover:bg-accent-gold-light text-dark-bg font-bold py-3 px-4 rounded-lg transition text-center smooth-transition hover:scale-105 hover:shadow-lg hover:shadow-accent-gold/30 btn-light"
                 >
                   📄 Download Resume
