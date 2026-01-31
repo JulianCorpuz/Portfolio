@@ -5,18 +5,7 @@ export default function About() {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h2>
         <div className="space-y-4 text-text-lighter leading-relaxed">
           <p className="animate-slide-up" style={{animationDelay: '0.1s'}}>
-            Full Stack Engineering Sr Developer at Accenture with expertise in backend development using Java and Spring Batch. 
-            I specialize in building robust, scalable solutions and leveraging Generative AI to solve complex business problems.
-          </p>
-          
-          <p className="animate-slide-up" style={{animationDelay: '0.2s'}}>
-            With a strong foundation in Java, PHP, and modern frameworks, I build enterprise-grade applications
-            that deliver exceptional performance and reliability. Currently focused on backend development and AI integration.
-          </p>
-
-          <p className="animate-slide-up" style={{animationDelay: '0.3s'}}>
-            I enjoy turning complex technical challenges into elegant, maintainable solutions. My experience spans across
-            different industries and I'm passionate about continuous learning and staying updated with the latest technologies.
+            Senior Full Stack Engineer with 6+ years of experience specializing in backend development using Java and the Spring Framework. Designed and maintained microservices-based backend systems, enabling scalable, resilient, and independently deployable services. I build enterprise-grade solutions and integrate Generative AI to solve complex business problems.
           </p>
         </div>
       </div>
@@ -105,7 +94,7 @@ export default function About() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-text-light text-sm">Experience</span>
-                    <span className="text-white font-bold">7+ Years</span>
+                    <span className="text-white font-bold">6+ Years</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-text-light text-sm">Companies</span>
