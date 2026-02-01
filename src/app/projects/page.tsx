@@ -1,6 +1,5 @@
 import projectsData from '@/data/projects-data.json'
 import Link from 'next/link'
-import Image from 'next/image'
 import ProjectVideoCard from '@/components/ProjectVideoCard'
 
 export default function Projects() {

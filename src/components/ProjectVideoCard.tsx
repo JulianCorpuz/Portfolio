@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useRef } from 'react'
 import Image from 'next/image'
 import { Maximize2 } from 'lucide-react'
 
@@ -10,7 +10,6 @@ interface ProjectVideoCardProps {
 }
 
 export default function ProjectVideoCard({ screenshot, title }: ProjectVideoCardProps) {
-  const [isFullscreen, setIsFullscreen] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -20,10 +19,8 @@ export default function ProjectVideoCard({ screenshot, title }: ProjectVideoCard
     try {
       if (!document.fullscreenElement) {
         await containerRef.current.requestFullscreen()
-        setIsFullscreen(true)
       } else {
         await document.exitFullscreen()
-        setIsFullscreen(false)
       }
     } catch (error) {
       console.error('Fullscreen error:', error)
