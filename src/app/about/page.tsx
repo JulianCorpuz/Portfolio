@@ -1,26 +1,26 @@
 export default function About() {
   return (
-    <div className="animate-fade-in space-y-8">
+    <div className="animate-fade-in space-y-6 sm:space-y-8">
       <div className="animate-slide-up">
-        <h2 className="text-3xl md:text-4xl font-bold text-text-light mb-4">About Me</h2>
-        <div className="space-y-4 text-text-lighter leading-relaxed">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-light mb-3 sm:mb-4">About Me</h2>
+        <div className="space-y-3 sm:space-y-4 text-text-lighter leading-relaxed text-sm sm:text-base">
           <p className="animate-slide-up" style={{animationDelay: '0.1s'}}>
-            Senior Full Stack Engineer with 6+ years of experience specializing in backend development using Java and the Spring Framework. Designed and maintained microservices-based backend systems, enabling scalable, resilient, and independently deployable services. I build enterprise-grade solutions and integrate Generative AI to solve complex business problems.
+            Senior Full Stack Engineer with 7+ years of experience specializing in backend development using Java and the Spring Framework. Designed and maintained microservices-based backend systems, enabling scalable, resilient, and independently deployable services. I build enterprise-grade solutions and integrate Generative AI to solve complex business problems.
           </p>
         </div>
       </div>
 
-      <div className="mt-10 pt-10 border-t border-dark-border animate-slide-up" style={{animationDelay: '0.2s'}}>
-        <h3 className="text-xl font-bold text-accent-gold mb-6">Experience</h3>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+      <div className="mt-6 sm:mt-10 pt-6 sm:pt-10 border-t border-dark-border animate-slide-up" style={{animationDelay: '0.2s'}}>
+        <h3 className="text-lg sm:text-xl font-bold text-accent-gold mb-4 sm:mb-6">Experience</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 lg:gap-12">
           {/* Timeline - Left Side */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="border-l-2 border-accent-gold pl-6 pb-6 relative animate-slide-up hover:border-accent-gold-light smooth-transition" style={{animationDelay: '0.3s'}}>
+            <div className="border-l-2 border-accent-gold pl-4 sm:pl-6 pb-4 sm:pb-6 relative animate-slide-up hover:border-accent-gold-light smooth-transition" style={{animationDelay: '0.3s'}}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-accent-gold rounded-full border-2 border-dark-bg animate-pulse-gold"></div>
-              <h4 className="text-lg font-bold text-text-light mb-1">Full Stack Engineering Sr Developer</h4>
-              <p className="text-accent-gold font-semibold text-sm mb-2">Accenture • May 2023 - Present</p>
+              <h4 className="text-base sm:text-lg font-bold text-text-light mb-1">Full Stack Engineering Sr Developer</h4>
+              <p className="text-accent-gold font-semibold text-xs sm:text-sm mb-2">Accenture • May 2023 - Present</p>
               <p className="text-text-darker text-xs mb-2">Risk Management System</p>
-              <p className="text-text-light text-sm">
+              <p className="text-text-light text-xs sm:text-sm">
                 Tech Stack: Spring Batch, Java, Oracle, SyBase
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function About() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-text-light text-sm">Experience</span>
-                    <span className="text-text-light font-bold">6+ Years</span>
+                    <span className="text-text-light font-bold">7+ Years</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-text-light text-sm">Companies</span>

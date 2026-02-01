@@ -51,7 +51,7 @@
     "description": "Enterprise-grade RPG-style social network with gamification engine",
     "fullDescription": "RANKED transforms social networking into an RPG-style competitive experience where every action earns XP and every user climbs the leaderboard. Built to demonstrate enterprise-level Spring Boot development, this platform features a complete gamification system with 50 progressive levels, 25+ achievement badges, daily streak multipliers, and global leaderboards. The architecture showcases Spring Batch expertise for batch processing, SOLID principles, clean code architecture, and production-ready deployment strategies.",
     "technologies": ["Java 17", "Spring Boot 3.2.1", "Spring Batch", "Spring Security", "Spring Data MongoDB", "MongoDB Atlas", "React 18", "Vite 5", "Tailwind CSS 3.4", "JWT", "BCrypt", "Maven"],
-    "screenshot": "/images/RANKED.png",
+    "screenshot": "/images/RANKED - Gamified Social Media Platform - Google Chrome 2026-01-22 22-10-17.mp4",
     "githubLink": "https://github.com/JulianCorpuz/Ranked",
     "liveLink": "",
     "features": [

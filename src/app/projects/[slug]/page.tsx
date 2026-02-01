@@ -16,9 +16,9 @@ export default function ProjectDetail({ params }: PageProps) {
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
-      <div className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">{project.title}</h1>
+    <div className="max-w-4xl mx-auto px-3 sm:px-4 py-8 sm:py-16">
+      <div className="mb-6 sm:mb-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">{project.title}</h1>
         <div className="flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
             <span
@@ -31,7 +31,7 @@ export default function ProjectDetail({ params }: PageProps) {
         </div>
       </div>
 
-      <div className="relative h-96 mb-8 rounded-lg overflow-hidden bg-gray-200">
+      <div className="relative h-48 sm:h-64 md:h-96 mb-6 sm:mb-8 rounded-lg overflow-hidden bg-gray-200">
         <Image
           src={project.screenshot}
           alt={project.title}
@@ -66,7 +66,7 @@ export default function ProjectDetail({ params }: PageProps) {
         </ul>
       </div>
 
-      <div className="flex gap-6 flex-col sm:flex-row">
+      <div className="flex gap-3 sm:gap-6 flex-col sm:flex-row">
         {project.liveLink && (
           <a
             href={project.liveLink}

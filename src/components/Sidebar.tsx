@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { Linkedin, Github, Mail } from 'lucide-react'
 
 interface SidebarProps {
   isOpen?: boolean
@@ -89,16 +90,16 @@ export default function Sidebar({ isOpen = false }: SidebarProps) {
         {/* Social Links */}
         <div className="flex gap-4 justify-center md:justify-start animate-slide-up" style={{animationDelay: '0.5s'}}>
           <a href="https://linkedin.com/in/julius-ian-corpuz-8bb025165" target="_blank" rel="noopener noreferrer" 
-             className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold text-xl hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
-            in
+             className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
+            <Linkedin size={20} />
           </a>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
-             className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold text-xl hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
-            ⚙
+             className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
+            <Github size={20} />
           </a>
           <a href="mailto:iancorpuz0118@gmail.com" 
-             className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold text-xl hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
-            ✉
+             className="w-10 h-10 rounded-lg bg-dark-border border border-dark-border hover:border-accent-gold flex items-center justify-center smooth-transition text-accent-gold hover:bg-gradient-to-br hover:from-accent-gold/20 hover:to-accent-gold/5 hover:scale-110 active:scale-95">
+            <Mail size={20} />
           </a>
         </div>
       </div>

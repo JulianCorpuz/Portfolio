@@ -1,6 +1,7 @@
 import projectsData from '@/data/projects-data.json'
 import Link from 'next/link'
 import Image from 'next/image'
+import ProjectVideoCard from '@/components/ProjectVideoCard'
 
 export default function Projects() {
   return (
@@ -17,35 +18,27 @@ export default function Projects() {
             className="bg-dark-border border border-dark-border rounded-2xl overflow-hidden hover:border-accent-gold transition-all duration-500 group animate-slide-up hover:shadow-2xl hover:shadow-accent-gold/10"
             style={{animationDelay: `${index * 0.2}s`}}
           >
-            {/* Project Header with Screenshot */}
+            {/* Project Header with Screenshot/Video */}
             <div className="grid md:grid-cols-2 gap-0">
-              <div className="relative h-64 md:h-96 border-b md:border-b-0 md:border-r border-dark-border overflow-hidden bg-dark-card group-hover:border-accent-gold/50 smooth-transition">
-                <Image 
-                  src={project.screenshot} 
-                  alt={project.title}
-                  fill
-                  className="object-contain group-hover:scale-105 smooth-transition duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-accent-gold/10 opacity-0 group-hover:opacity-100 smooth-transition duration-700"></div>
-              </div>
+              <ProjectVideoCard screenshot={project.screenshot} title={project.title} />
               
-              <div className="p-8 flex flex-col justify-center project-content-light">
-                <h3 className="text-2xl md:text-3xl font-bold text-text-light mb-3 group-hover:text-accent-gold transition">
+              <div className="p-4 sm:p-6 md:p-8 flex flex-col justify-center project-content-light">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-text-light mb-2 sm:mb-3 group-hover:text-accent-gold transition">
                   {project.title}
                 </h3>
                 
-                <p className="text-accent-gold text-sm font-semibold mb-4">{project.description}</p>
+                <p className="text-accent-gold text-xs sm:text-sm font-semibold mb-3 sm:mb-4">{project.description}</p>
                 
-                <p className="text-text-lighter text-sm leading-relaxed mb-6">
+                <p className="text-text-lighter text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
                   {project.fullDescription}
                 </p>
                 
-                <div className="flex gap-4">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
                   <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 bg-accent-gold text-dark-bg font-semibold rounded-lg hover:bg-accent-gold-light transition smooth-transition group-hover:shadow-lg group-hover:shadow-accent-gold/30 active:scale-95"
+                    className="px-4 sm:px-6 py-2 sm:py-3 bg-accent-gold text-dark-bg font-semibold rounded-lg hover:bg-accent-gold-light transition smooth-transition group-hover:shadow-lg group-hover:shadow-accent-gold/30 active:scale-95 text-center text-sm sm:text-base"
                   >
                     View Code
                   </a>
@@ -54,14 +47,14 @@ export default function Projects() {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-6 py-3 border border-accent-gold text-accent-gold font-semibold rounded-lg hover:bg-accent-gold hover:text-dark-bg transition smooth-transition group-hover:shadow-lg group-hover:shadow-accent-gold/30 active:scale-95"
+                      className="px-4 sm:px-6 py-2 sm:py-3 border border-accent-gold text-accent-gold font-semibold rounded-lg hover:bg-accent-gold hover:text-dark-bg transition smooth-transition group-hover:shadow-lg group-hover:shadow-accent-gold/30 active:scale-95 text-center text-sm sm:text-base"
                     >
                       Live Demo →
                     </a>
                   )}
                   <Link
                     href={`/projects/${project.id}`}
-                    className="px-6 py-3 border border-dark-border text-text-lighter font-semibold rounded-lg hover:border-accent-gold hover:text-accent-gold transition smooth-transition active:scale-95"
+                    className="px-4 sm:px-6 py-2 sm:py-3 border border-dark-border text-text-lighter font-semibold rounded-lg hover:border-accent-gold hover:text-accent-gold transition smooth-transition active:scale-95 text-center text-sm sm:text-base"
                   >
                     Full Details
                   </Link>
@@ -70,7 +63,7 @@ export default function Projects() {
             </div>
 
             {/* Tech Stack */}
-            <div className="px-8 py-6 border-t border-dark-border bg-dark-card/30 tech-stack-light">
+            <div className="px-4 sm:px-6 md:px-8 py-4 sm:py-6 border-t border-dark-border bg-dark-card/30 tech-stack-light overflow-x-auto">
               <h4 className="text-sm font-semibold text-text-lighter mb-3 uppercase tracking-wider">Tech Stack</h4>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, idx) => (
